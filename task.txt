@@ -1,0 +1,28 @@
+Task 1.
+
+Write a class called Planet that will store information on it's name, age, and amount of food that is available to orgnisms living on it (not lower then 15 units). Initial value of number of units of food should be set with a random value (using rand() function). Planet should have a function that will increase the age of the planet, decreasing age of the Planet should be restricted!! Changing name of the Planet should not be possible! Planet should have methods for increasing and decreasing number of units of food that should check if they are correct.
+Write all required methods (constructors, destructors, getters, setters etc.).
+
+Task 2
+Write a class called Organism that stores information if it is alive. The Organism should be created on the Planet, so it should contain reference to the Planet. The Planet should not be changed (CONST!!)! 
+Write all required methods (constructors, destructors, getters, setters etc.).
+
+Task 3 
+Write a class called Animal that will be derived from Organism class and it will contain information on the age and weigth of the animal. Age and weigth should be set randomly when an Animal is created. Restrict access to age and weigth so that age can be only increased and weight cannot be changed from outside of the class.
+Class Animal should also contain method consumeFood() that will decrease the amount of food available on the Planet according to the weight of the Animal, i.e. 1 unit of food per each 10 kilograms. When the amount of food on the Planet is lower then the Animal requires it should die. Method consumeFood should return boolean value stating if the food was taken was taken from the Planet.
+Write all required methods (constructors, destructors, getters, setters etc.).
+
+Task 4
+Write a class called Plant derived from the Organism Class that will store information on the production coefficient and its height. Number of units of food should be set randomly from 0.1 to 0.5. Write method produceFood() that will increase the number of units of food on the Planet, i.e. number of produced unit = production coefficient * height. Method produceFood should return boolean value stating if the food was added to the Planet resources.
+Write all required methods (constructors, destructors, getters, setters etc.).
+
+
+Task 5
+In the main function create one Planet called Earth and set its age and amount of food.
+Create 5 different Animals and 3 different Plants on the Earth. 
+Store all Animals and all Plants in one collection/container (list preferably).
+In a loop that will be iterating until there is food on the Planet. In each and every iteration of the loop increase age of the Planet, for each and every Animal call consumeFood function and for each and every Plant call function produceFood. Increase height and weigth of organisms.
+
+Calling functions for objects stored in one collection would be difficult when Animals and Plants do not have the same function names. Maybe some adjustments to the class Organism would be needed? If so write what kind of adjustments. Maybe using RTTI, virtual constructors/destructors? Think how you could solve that problem and propose a solution.
+
+All constructors and destructors should write on the output information on what is created/destroyed. Members of the class (like variables) should be accessed only via specified methods.
